@@ -27,14 +27,15 @@
     "php": ">=7.2",
     "workerman/webman-framework": "^1.0",
     "monolog/monolog": "^2.0",
-    "vlucas/phpdotenv": ">=4.1,<6.0",
+    "vlucas/phpdotenv": "^5.1.0",
     "topthink/think-orm": "^2.0",
     "php-di/php-di": "^6.3",
     "doctrine/annotations": "^1.13",
     "xiaodi/think-user": "^0.0.1",
     "workerman/validation": "^3.0",
     "xiaodi-dev/jwt-auth": "dev-master",
-    "casbin/casbin": "^3.2"
+    "casbin/casbin": "^3.2",
+    "illuminate/redis": "^8.2.0"
   },
   "suggest": {
     "ext-event": "For better performance. "
