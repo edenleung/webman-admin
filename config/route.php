@@ -15,20 +15,16 @@
 
 use Webman\Route;
 
-use app\admin\controller\System\Article;
+use app\admin\controller\system\Article;
 use app\admin\controller\Auth;
-use app\admin\controller\System\Menu;
-use app\admin\controller\System\Action;
-use app\admin\controller\System\Dept;
-use app\admin\controller\System\Role;
-use app\admin\controller\System\User;
-use app\admin\controller\System\ArticleCategory;
-use app\Auth as AppAuth;
-use app\middleware\AccessControl;
+use app\admin\controller\system\Menu;
+use app\admin\controller\system\Action;
+use app\admin\controller\system\Dept;
+use app\admin\controller\system\Role;
+use app\admin\controller\system\User;
+use app\admin\controller\system\ArticleCategory;
 use app\middleware\JwtAuth;
-use Psr\Container\ContainerInterface;
 use support\Request;
-use Webman\Container;
 
 Route::group('/admin/auth', function () {
     Route::post('/login', [Auth::class, 'login']);
