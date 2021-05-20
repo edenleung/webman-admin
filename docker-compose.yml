@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  webman:
+    image: xiaodi93/webman-php
+    ports:
+      - "8787:8787"
+    volumes:
+      - .:/var/www/html
+    tty: true
