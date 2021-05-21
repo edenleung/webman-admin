@@ -17,8 +17,9 @@ return [
     support\bootstrap\Session::class,
     support\bootstrap\db\Thinkphp::class,
     // support\bootstrap\db\Laravel::class,
+    support\bootstrap\db\Heartbeat::class,
     support\bootstrap\Redis::class,
     support\bootstrap\Log::class,
     support\bootstrap\Translation::class,
-    support\bootstrap\Service::class
+    support\bootstrap\Service::class,
 ];

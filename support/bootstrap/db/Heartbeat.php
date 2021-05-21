@@ -14,7 +14,7 @@
 namespace support\bootstrap\db;
 
 use Webman\Bootstrap;
-use support\Db;
+use think\facade\Db;
 
 /**
  * mysql心跳。定时发送一个查询，防止mysql连接长时间不活跃被mysql服务端断开。
@@ -31,7 +31,7 @@ class Heartbeat implements Bootstrap
     public static function start($worker)
     {
         \Workerman\Timer::add(55, function (){
-            Db::select('select 1 limit 1');
+            Db::query('select 1 limit 1');
         });
     }
 }
