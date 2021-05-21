@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2b972cbf549af8b036d502aad052d899",
+    "content-hash": "46a4f8ea7b57059740d44a93495ea990",
     "packages": [
         {
             "name": "casbin/casbin",
@@ -2995,6 +2995,49 @@
             }
         },
         {
+            "name": "xiaodi/jwt-auth",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/edenleung/jwt-auth.git",
+                "reference": "a2c8b1cc01dd47465eca06e6746910a9ca779f89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/edenleung/jwt-auth/zipball/a2c8b1cc01dd47465eca06e6746910a9ca779f89",
+                "reference": "a2c8b1cc01dd47465eca06e6746910a9ca779f89",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "lcobucci/jwt": "4.*"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JwtAuth\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Eden Leung",
+                    "email": "liangjinbiao@live.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/edenleung/jwt-auth/issues",
+                "source": "https://github.com/edenleung/jwt-auth/tree/master"
+            },
+            "time": "2021-05-19T09:05:42+00:00"
+        },
+        {
             "name": "xiaodi/think-user",
             "version": "0.0.1",
             "source": {
@@ -3037,7 +3080,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "xiaodi-dev/jwt-auth": 20
+        "xiaodi-dev/jwt-auth": 20,
+        "xiaodi/jwt-auth": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
@@ -3045,5 +3089,5 @@
         "php": ">=7.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
