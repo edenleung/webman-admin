@@ -26,7 +26,7 @@ return [
             ],
 
             // 适配器 .
-            'adapter' => app\DatabaseAdapter::class,
+            'adapter' => Permission\DatabaseAdapter::class,
 
             /*
             * 数据库设置.

@@ -1,8 +1,8 @@
 <?php
 
-namespace app;
+namespace Permission;
 
-use app\common\model\Rule;
+use Permission\Model\Rule;
 use Casbin\Model\Model;
 use Casbin\Persist\Adapter;
 use Casbin\Persist\AdapterHelper;

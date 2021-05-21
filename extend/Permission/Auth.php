@@ -1,6 +1,6 @@
 <?php
 
-namespace app;
+namespace Permission;
 
 use Casbin\Enforcer;
 use Casbin\Model\Model;

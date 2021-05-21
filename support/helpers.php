@@ -305,12 +305,19 @@ function can($username, $source, $action)
     return $auth->enforce($username, $source, $action);
 }
 
+/**
+ * 获取权限实例
+ * 
+ * @return \Permission\Auth
+ */
 function enforce()
 {
-    return Container::get(\app\Auth::class);
+    return Container::get(\Permission\Auth::class);
 }
 
 /**
+ * 获取 jwt 实例
+ * 
  * @return \JwtAuth\JwtAuth
  */
 function jwt()
@@ -318,6 +325,10 @@ function jwt()
     return Container::get(\JwtAuth\JwtAuth::class);
 }
 
+/**
+ * 抛出业务异常
+ * @return SystemException
+ */
 function exception($message, $code = 50015)
 {
     throw new SystemException($message, $code);

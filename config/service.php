@@ -13,7 +13,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-use app\Auth;
+use Permission\Auth;
 use JwtAuth\JwtAuth;
 
 return [

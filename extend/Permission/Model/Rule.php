@@ -1,6 +1,6 @@
 <?php
 
-namespace app\common\model;
+namespace Permission\Model;
 
 class Rule extends \think\Model
 {
