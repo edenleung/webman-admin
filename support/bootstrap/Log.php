@@ -42,10 +42,7 @@ class Log implements Bootstrap {
      * @return void
      */
     public static function start($worker)
-    {
-        \support\bootstrap\Container::make(\app\Auth::class);
-        \support\bootstrap\Container::make(\JwtAuth\JwtAuth::class);
-        
+    {        
         $configs = config('log', []);
         foreach ($configs as $channel => $config) {
             $logger = static::$_instance[$channel] = new Logger($channel);

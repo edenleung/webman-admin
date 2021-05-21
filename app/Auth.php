@@ -5,6 +5,10 @@ namespace app;
 use Casbin\Enforcer;
 use Casbin\Model\Model;
 
+/**
+ * class Auth
+ * @package app
+ */
 class Auth
 {
     /**
