@@ -13,4 +13,5 @@ return [
     'refresh_code'  => 50002,
     'iss'           => 'client.tant',
     'aud'           => 'server.tant',
+    'user_model'    => \app\common\model\User::class
 ];

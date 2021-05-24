@@ -33,7 +33,6 @@
     "doctrine/annotations": "^1.13",
     "xiaodi/think-user": "^0.0.1",
     "workerman/validation": "^3.0",
-    "xiaodi-dev/jwt-auth": "dev-master",
     "casbin/casbin": "^3.2",
     "illuminate/redis": "^8.2.0",
     "xiaodi/jwt-auth": "dev-master"

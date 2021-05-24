@@ -2,7 +2,6 @@
 
 namespace app\middleware;
 
-use app\common\model\User;
 use Webman\MiddlewareInterface;
 use Webman\Http\Response;
 use Webman\Http\Request;
@@ -20,10 +19,9 @@ class JwtAuth implements MiddlewareInterface
             return json(['message' => 'token 效验失败']);
         }
 
-        $token = jwt()->getVerifyToken();
-        $identifier = $token->claims()->get('jti');
-        $request->user = User::find($identifier);
+        $request->user = jwt()->getUser();
         $response = $next($request);
+
         return $response;
     }
 }
